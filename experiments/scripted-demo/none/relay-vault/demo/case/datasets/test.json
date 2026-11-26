@@ -1,0 +1,81 @@
+{
+  "split": "test",
+  "repeats": 1,
+  "samples": [
+    {
+      "id": "win-and-reset",
+      "payload": {
+        "actions": [
+          "right",
+          "right",
+          "down",
+          "down",
+          "right",
+          "right",
+          "up",
+          "up",
+          "left",
+          "reset"
+        ]
+      }
+    },
+    {
+      "id": "last-charge-win",
+      "payload": {
+        "actions": [
+          "right",
+          "left",
+          "right",
+          "left",
+          "right",
+          "right",
+          "down",
+          "down",
+          "right",
+          "right",
+          "up",
+          "up"
+        ]
+      }
+    },
+    {
+      "id": "drain-and-reset",
+      "payload": {
+        "actions": [
+          "right",
+          "left",
+          "right",
+          "left",
+          "right",
+          "left",
+          "right",
+          "left",
+          "right",
+          "left",
+          "right",
+          "left",
+          "right",
+          "reset"
+        ]
+      }
+    },
+    {
+      "id": "locked-then-win",
+      "payload": {
+        "actions": [
+          "right",
+          "right",
+          "right",
+          "right",
+          "left",
+          "down",
+          "down",
+          "right",
+          "right",
+          "up",
+          "up"
+        ]
+      }
+    }
+  ]
+}

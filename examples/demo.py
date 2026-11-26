@@ -5,6 +5,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from uuid import uuid4
 
 ROOT = Path(__file__).resolve().parents[1]
 CASE = ROOT / "cases/relay-vault"
@@ -79,7 +80,7 @@ def plan(req):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--output", type=Path, default=ROOT/"experiments")
-    p.add_argument("--run-id", default="demo")
+    p.add_argument("--run-id", help="Name a new session explicitly")
     p.add_argument("--resume", type=Path, help="Continue an existing scripted session")
     args = p.parse_args()
     if args.resume:
@@ -88,8 +89,12 @@ def main():
         if status["identity"]["agent"] != "scripted-demo" or status["identity"]["model"] != "none":
             raise ValueError("Only scripted demo sessions can be resumed with this driver")
     else:
+        run_id = args.run_id
+        if run_id is None:
+            sample = args.output / "scripted-demo/none/relay-vault/demo"
+            run_id = f"demo-{uuid4().hex[:12]}" if sample.exists() else "demo"
         exp = Path(cli("init", "--case", CASE, "--agent", "scripted-demo", "--model", "none",
-                       "--output", args.output.resolve(), "--run-id", args.run_id, "--max-rounds", 3)["experiment"])
+                       "--output", args.output.resolve(), "--run-id", run_id, "--max-rounds", 3)["experiment"])
     while True:
         handoff = cli("next", "--experiment", exp)
         if handoff["status"] == "completed":

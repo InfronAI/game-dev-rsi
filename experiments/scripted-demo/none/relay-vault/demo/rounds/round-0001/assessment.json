@@ -1,0 +1,57 @@
+{
+  "round": 1,
+  "artifact_hash": "6d6b0d8c79ad516b70ca02b481f7d9133fd40471472ab0aaadde59d12b1ecd7c",
+  "score": 83.452381,
+  "sample_scores": {
+    "locked-exit:1": 80.0,
+    "wall-bump:1": 62.5,
+    "collector:1": 100.0,
+    "win-and-reset:1": 100.0,
+    "last-charge-win:1": 100.0,
+    "drain-and-reset:1": 100.0,
+    "locked-then-win:1": 41.666667
+  },
+  "gates_pass": false,
+  "eligible": false,
+  "dimension_scores": {
+    "movement": 88.80952380952381,
+    "resources": 76.90476190476191
+  },
+  "gate_status": {
+    "transition_parity": "fail"
+  },
+  "environment_hash": "1c1139f090f41a40928659605c2699091df899efed9039d348e4db35f9713f24",
+  "comparison": null,
+  "strategy": "initial",
+  "usage_cumulative": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0,
+    "unknown_stages": 2
+  },
+  "elapsed_seconds": 1.659,
+  "measurement_valid": true,
+  "limitations": [
+    "gate:transition_parity:fail",
+    "sample:locked-exit:1:artifact_failure",
+    "sample:wall-bump:1:artifact_failure",
+    "sample:locked-then-win:1:artifact_failure"
+  ],
+  "metrics": {
+    "movement": {
+      "mean": 0.8880952380952382,
+      "min": 0.4166666666666667,
+      "max": 1.0,
+      "observed": 7,
+      "total": 7
+    },
+    "resources": {
+      "mean": 0.7690476190476191,
+      "min": 0.16666666666666666,
+      "max": 1.0,
+      "observed": 7,
+      "total": 7
+    }
+  },
+  "unique_artifact": true
+}

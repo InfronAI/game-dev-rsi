@@ -1,0 +1,122 @@
+{
+  "route": "locked-exit",
+  "error": null,
+  "checkpoints": [
+    {
+      "step": 0,
+      "input": "start",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 1,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 11,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 11,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 2,
+      "input": "right",
+      "expected": {
+        "x": 3,
+        "y": 1,
+        "power": 10,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 3,
+        "y": 1,
+        "power": 10,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 3,
+      "input": "right",
+      "expected": {
+        "x": 4,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 4,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 4,
+      "input": "right",
+      "expected": {
+        "x": 4,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 4,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    }
+  ],
+  "ratios": {
+    "movement": 1.0,
+    "resources": 1.0
+  },
+  "first_difference": null
+}

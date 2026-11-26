@@ -1,0 +1,14 @@
+{
+  "attempt_id": "3:simulation:1",
+  "started_at": "2026-11-26T02:42:40.309243+00:00",
+  "timeout_seconds": 120,
+  "argv": [
+    "/opt/homebrew/opt/python@3.15/bin/python3.15",
+    "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/case/simulation/collect.py",
+    "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/attempts/simulation-001/request.json",
+    "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/attempts/simulation-001/response.json"
+  ],
+  "exit_code": 0,
+  "status": "collected",
+  "ended_at": "2026-11-26T02:42:41.430785+00:00"
+}

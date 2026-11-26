@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "agent": "scripted-demo",
+  "model": "none",
+  "agent_version": "unknown",
+  "model_version": "unknown",
+  "reasoning_effort": "unknown",
+  "tools": [],
+  "parameters": {}
+}

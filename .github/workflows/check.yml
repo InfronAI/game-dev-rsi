@@ -16,6 +16,6 @@ jobs:
       - run: python3 tools/rsi.py doctor --case cases/relay-vault
       - run: node --test tests/rules.test.mjs
       - run: python3 -m unittest discover -s tests -v
-      - run: python3 examples/demo.py
+      - run: python3 examples/demo.py --run-id ci
       - run: python3 tools/rsi.py showcase
-      - run: python3 tests/browser_smoke.py --game experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/artifact/index.html --replay experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/wall-bump-1.html
+      - run: python3 tests/browser_smoke.py --game experiments/scripted-demo/none/relay-vault/ci/rounds/round-0003/artifact/index.html --replay experiments/scripted-demo/none/relay-vault/ci/rounds/round-0001/evidence/attempt-001/wall-bump-1.html

@@ -1,0 +1,127 @@
+{
+  "runs": [
+    {
+      "title": "Relay Vault",
+      "owner": "scripted-demo",
+      "model": "none",
+      "name": "demo",
+      "status": "completed",
+      "rounds": [
+        {
+          "number": 1,
+          "score": 83.452381,
+          "gates": false,
+          "judge": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/judge.json",
+          "evidence": [
+            {
+              "sample": "locked-exit:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/locked-exit-1.html"
+            },
+            {
+              "sample": "wall-bump:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/wall-bump-1.html"
+            },
+            {
+              "sample": "collector:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/collector-1.html"
+            },
+            {
+              "sample": "win-and-reset:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/win-and-reset-1.html"
+            },
+            {
+              "sample": "last-charge-win:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/last-charge-win-1.html"
+            },
+            {
+              "sample": "drain-and-reset:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/drain-and-reset-1.html"
+            },
+            {
+              "sample": "locked-then-win:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence/attempt-001/locked-then-win-1.html"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "score": 89.071429,
+          "gates": false,
+          "judge": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/judge.json",
+          "evidence": [
+            {
+              "sample": "locked-exit:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001/locked-exit-1.html"
+            },
+            {
+              "sample": "wall-bump:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001/wall-bump-1.html"
+            },
+            {
+              "sample": "collector:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001/collector-1.html"
+            },
+            {
+              "sample": "win-and-reset:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001/win-and-reset-1.html"
+            },
+            {
+              "sample": "last-charge-win:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001/last-charge-win-1.html"
+            },
+            {
+              "sample": "drain-and-reset:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001/drain-and-reset-1.html"
+            },
+            {
+              "sample": "locked-then-win:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001/locked-then-win-1.html"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "score": 100.0,
+          "gates": true,
+          "judge": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/judge.json",
+          "evidence": [
+            {
+              "sample": "locked-exit:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence/attempt-001/locked-exit-1.html"
+            },
+            {
+              "sample": "wall-bump:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence/attempt-001/wall-bump-1.html"
+            },
+            {
+              "sample": "collector:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence/attempt-001/collector-1.html"
+            },
+            {
+              "sample": "win-and-reset:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence/attempt-001/win-and-reset-1.html"
+            },
+            {
+              "sample": "last-charge-win:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence/attempt-001/last-charge-win-1.html"
+            },
+            {
+              "sample": "drain-and-reset:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence/attempt-001/drain-and-reset-1.html"
+            },
+            {
+              "sample": "locked-then-win:1",
+              "href": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence/attempt-001/locked-then-win-1.html"
+            }
+          ]
+        }
+      ],
+      "works": {
+        "first": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/artifact/index.html",
+        "best": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/artifact/index.html",
+        "latest": "../experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/artifact/index.html"
+      }
+    }
+  ],
+  "errors": []
+}

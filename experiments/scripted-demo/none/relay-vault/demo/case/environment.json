@@ -1,0 +1,14 @@
+{
+  "runtime": {
+    "python": ">=3.9",
+    "node": ">=22"
+  },
+  "preflight": {
+    "argv": [
+      "{python}",
+      "{case_dir}/simulation/doctor.py"
+    ],
+    "entrypoint": "simulation/doctor.py",
+    "timeout_seconds": 10
+  }
+}

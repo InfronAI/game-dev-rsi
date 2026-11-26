@@ -1,0 +1,24 @@
+{
+  "hypothesis": "Require both relays before accepting a move into the exit.",
+  "strategy": "exit-rule",
+  "stop_the_line": true,
+  "expected_gain_points": 0,
+  "actions": [
+    {
+      "addresses": [
+        "locked-exit",
+        "locked-then-win"
+      ],
+      "change": "Require both relays before accepting a move into the exit.",
+      "expected_effect": "Keep accepted routes stable and remove the observed discrepancy.",
+      "validation": "Replay both public suites and compare each state."
+    }
+  ],
+  "request_id": "fe75b65599f7fba664a73b913ff2d44d9f649491430de3b7a3b0f1260416e92b",
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  "accepted_at": "2026-11-26T02:42:38.238516+00:00"
+}

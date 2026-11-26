@@ -1,0 +1,138 @@
+{
+  "request_id": "6cdc767de5df0349605902a3a9da9b98079c4eff2838d9e5023e176627c873d9",
+  "confounds": [],
+  "diagnostic_only": false,
+  "environment": {
+    "collector": "relay-state-v1",
+    "python": "3.15.2",
+    "node": "v26.12.0"
+  },
+  "samples": [
+    {
+      "id": "locked-exit:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "locked-exit-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "locked-exit-1.html"
+        }
+      ]
+    },
+    {
+      "id": "wall-bump:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "wall-bump-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "wall-bump-1.html"
+        }
+      ]
+    },
+    {
+      "id": "collector:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "collector-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "collector-1.html"
+        }
+      ]
+    },
+    {
+      "id": "win-and-reset:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "win-and-reset-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "win-and-reset-1.html"
+        }
+      ]
+    },
+    {
+      "id": "last-charge-win:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "last-charge-win-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "last-charge-win-1.html"
+        }
+      ]
+    },
+    {
+      "id": "drain-and-reset:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "drain-and-reset-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "drain-and-reset-1.html"
+        }
+      ]
+    },
+    {
+      "id": "locked-then-win:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "locked-then-win-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "locked-then-win-1.html"
+        }
+      ]
+    }
+  ]
+}

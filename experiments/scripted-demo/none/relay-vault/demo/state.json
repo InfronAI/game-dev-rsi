@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "experiment_id": "1099be0531b348779b4a1f3eba3bfc9b",
+  "run_id": "demo",
+  "case_id": "relay-vault",
+  "created_at": "2026-11-26T02:42:36.441757+00:00",
+  "created_epoch": 1795660956.4421198,
+  "updated_at": "2026-11-26T02:42:41.819952+00:00",
+  "case_hash": "7233c3fadec5b07db2204a7d785b01c12036edd23f0956ecbf4b7137905000fb",
+  "case_files": {
+    "GOAL.md": "8063da59c01337c6279f14151f9df387dfbd023005b3a4b50d534322d359164b",
+    "PROMPT.md": "83eea57e1d29e25ec4f110d4e2b89454049d38bbeb5a1368973fbb3fccf9ed6a",
+    "assets/reference/index.html": "ba918cbda62b5fa5876593403023e97545257dba8c2747c1cfc075801f8c1dec",
+    "assets/reference/logic.mjs": "e90bcbde3ce655bd1700f18f914b630944e9ba2c121a680db147858333d66768",
+    "case.json": "d95f34fcbad0d725b1c101fb7f4df0b33ee3513c2b56ddaae38036b1661c3bfe",
+    "datasets/test.json": "58226fa5e3a24f0800cd726ac075c57e99782e21850e2cd4cfdad0a61fba109b",
+    "datasets/validation.json": "576c49577861ad0c1c3a121baff6780bd8ddbe952fccfbfa29c99dae344302f2",
+    "environment.json": "dff005f9be58cccc9c545fc31e56a28cb5c27877dfc157121b9cae806824e48d",
+    "rubric.json": "00c4f9fffffac962c5d2364828bf3ecd620a96d8cc012b88a3a67d0e8f186cd0",
+    "simulation/README.md": "04870b19564b1e6a218d16ff6fcaedb028466f64dafe030deaf0d38d0233a4a8",
+    "simulation/collect.py": "b89572835ca887f9f0b24183494a4d18111e8fbe299da5f71c026858d88e1e56",
+    "simulation/doctor.py": "24670b96d60a23468c3ea3ee1b004e6925faa8ca5f1b1d2d5bcfe10e7f88d9ae",
+    "simulation/replay.html": "3820f407602bab74ea82ba4e3742930d97477261d050f8ef5fc5ed599d6cdc3c",
+    "simulation/run-route.mjs": "1799ed0b45d833700016cef64a26989e28fe5ea719033ce2d01e74c2c7921c1b"
+  },
+  "identity_hash": "65c54122013588b0dc33527b9f73c566b7c7ca49c8eca7e2bcf35bbfcba39ba6",
+  "budget": {
+    "max_rounds": 3,
+    "max_wall_seconds": 28800,
+    "max_stage_attempts": 3
+  },
+  "budget_hash": "1b43534b6fffdccc83accb3c7a86f6cd52fd34256c6dbdb751bfaa938b8f674b",
+  "runner_hash": "e5e2ca142d8819ac4d3f5df6870f7fa01917b5852ecd9719a8d57cc028464e24",
+  "status": "completed",
+  "stage": "done",
+  "round": 3,
+  "best_round": 3,
+  "history": [
+    {
+      "round": 1,
+      "artifact_hash": "6d6b0d8c79ad516b70ca02b481f7d9133fd40471472ab0aaadde59d12b1ecd7c",
+      "score": 83.452381,
+      "sample_scores": {
+        "locked-exit:1": 80.0,
+        "wall-bump:1": 62.5,
+        "collector:1": 100.0,
+        "win-and-reset:1": 100.0,
+        "last-charge-win:1": 100.0,
+        "drain-and-reset:1": 100.0,
+        "locked-then-win:1": 41.666667
+      },
+      "gates_pass": false,
+      "eligible": false,
+      "dimension_scores": {
+        "movement": 88.80952380952381,
+        "resources": 76.90476190476191
+      },
+      "gate_status": {
+        "transition_parity": "fail"
+      },
+      "environment_hash": "1c1139f090f41a40928659605c2699091df899efed9039d348e4db35f9713f24",
+      "comparison": null,
+      "strategy": "initial",
+      "usage_cumulative": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "unknown_stages": 2
+      },
+      "elapsed_seconds": 1.659,
+      "measurement_valid": true,
+      "limitations": [
+        "gate:transition_parity:fail",
+        "sample:locked-exit:1:artifact_failure",
+        "sample:wall-bump:1:artifact_failure",
+        "sample:locked-then-win:1:artifact_failure"
+      ],
+      "metrics": {
+        "movement": {
+          "mean": 0.8880952380952382,
+          "min": 0.4166666666666667,
+          "max": 1.0,
+          "observed": 7,
+          "total": 7
+        },
+        "resources": {
+          "mean": 0.7690476190476191,
+          "min": 0.16666666666666666,
+          "max": 1.0,
+          "observed": 7,
+          "total": 7
+        }
+      },
+      "unique_artifact": true
+    },
+    {
+      "round": 2,
+      "artifact_hash": "177a07297efbb2aeca8cfff99971ae35415aaa492b6d677a4e7aa2eec6656b40",
+      "score": 89.071429,
+      "sample_scores": {
+        "locked-exit:1": 91.0,
+        "wall-bump:1": 62.5,
+        "collector:1": 100.0,
+        "win-and-reset:1": 100.0,
+        "last-charge-win:1": 100.0,
+        "drain-and-reset:1": 100.0,
+        "locked-then-win:1": 70.0
+      },
+      "gates_pass": false,
+      "eligible": false,
+      "dimension_scores": {
+        "movement": 100.0,
+        "resources": 75.71428571428571
+      },
+      "gate_status": {
+        "transition_parity": "fail"
+      },
+      "environment_hash": "1c1139f090f41a40928659605c2699091df899efed9039d348e4db35f9713f24",
+      "comparison": null,
+      "strategy": "exit-rule",
+      "usage_cumulative": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "unknown_stages": 5
+      },
+      "elapsed_seconds": 3.423,
+      "measurement_valid": true,
+      "limitations": [
+        "gate:transition_parity:fail",
+        "sample:locked-exit:1:artifact_failure",
+        "sample:wall-bump:1:artifact_failure",
+        "sample:locked-then-win:1:artifact_failure"
+      ],
+      "metrics": {
+        "movement": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "observed": 7,
+          "total": 7
+        },
+        "resources": {
+          "mean": 0.7571428571428571,
+          "min": 0.16666666666666666,
+          "max": 1.0,
+          "observed": 7,
+          "total": 7
+        }
+      },
+      "unique_artifact": true
+    },
+    {
+      "round": 3,
+      "artifact_hash": "2f891e9065518baa7c2f8d0f7c0ae5b44e604189a5b538b3f84c427a38a809ef",
+      "score": 100.0,
+      "sample_scores": {
+        "locked-exit:1": 100.0,
+        "wall-bump:1": 100.0,
+        "collector:1": 100.0,
+        "win-and-reset:1": 100.0,
+        "last-charge-win:1": 100.0,
+        "drain-and-reset:1": 100.0,
+        "locked-then-win:1": 100.0
+      },
+      "gates_pass": true,
+      "eligible": true,
+      "dimension_scores": {
+        "movement": 100.0,
+        "resources": 100.0
+      },
+      "gate_status": {
+        "transition_parity": "pass"
+      },
+      "environment_hash": "1c1139f090f41a40928659605c2699091df899efed9039d348e4db35f9713f24",
+      "comparison": null,
+      "strategy": "wall-cost",
+      "usage_cumulative": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cost_usd": 0,
+        "unknown_stages": 8
+      },
+      "elapsed_seconds": 5.224,
+      "measurement_valid": true,
+      "limitations": [],
+      "metrics": {
+        "movement": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "observed": 7,
+          "total": 7
+        },
+        "resources": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "observed": 7,
+          "total": 7
+        }
+      },
+      "unique_artifact": true
+    }
+  ],
+  "streak": [],
+  "events": [
+    {
+      "seq": 1,
+      "at": "2026-11-26T02:42:36.442579+00:00",
+      "kind": "initialized",
+      "data": {
+        "origin": "cold_start"
+      },
+      "previous_hash": null,
+      "hash": "fc0de26cf5325a9e37a7c0a2d8a02e77a533893e03a908c680e851767dbd7654"
+    },
+    {
+      "seq": 2,
+      "at": "2026-11-26T02:42:36.571720+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "15a1be98b485c1e80cae2b189a03911a60a35e1f4cb926c5f4645b8e36530bf2",
+        "round": 1,
+        "stage": "generation",
+        "response_hash": "7eee12404b4926faa1cd06da8d5ba22936591881c2403e765ca857bb35c3e673"
+      },
+      "previous_hash": "fc0de26cf5325a9e37a7c0a2d8a02e77a533893e03a908c680e851767dbd7654",
+      "hash": "33266a51e4bf56e9261f45f09a0214e2dccfbd742e166393fc5d0ef726ed92b3"
+    },
+    {
+      "seq": 3,
+      "at": "2026-11-26T02:42:36.699216+00:00",
+      "kind": "simulation_started",
+      "data": {
+        "attempt_id": "1:simulation:1"
+      },
+      "previous_hash": "33266a51e4bf56e9261f45f09a0214e2dccfbd742e166393fc5d0ef726ed92b3",
+      "hash": "9ab38467a69a0d7dcadcde83032d31798c92392a23fc5aea19fd216b0b4b9f1e"
+    },
+    {
+      "seq": 4,
+      "at": "2026-11-26T02:42:37.895969+00:00",
+      "kind": "simulation_collected",
+      "data": {
+        "attempt_id": "1:simulation:1",
+        "response": "rounds/round-0001/attempts/simulation-001/collected.response.json"
+      },
+      "previous_hash": "9ab38467a69a0d7dcadcde83032d31798c92392a23fc5aea19fd216b0b4b9f1e",
+      "hash": "0febdea558de65e0c38483f39da04dfa1576ee516ae03106ef42aa4cc8046af8"
+    },
+    {
+      "seq": 5,
+      "at": "2026-11-26T02:42:37.962442+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "3ed2824acc4b3b2800d68c19f035e121e5e032f27ff45b8dcf260fdfde4e3166",
+        "round": 1,
+        "stage": "simulation",
+        "response_hash": "bf1bf9a6b864a8768764f38cb18956136e02bd2d1bd871db534b4b98ebec6da4"
+      },
+      "previous_hash": "0febdea558de65e0c38483f39da04dfa1576ee516ae03106ef42aa4cc8046af8",
+      "hash": "f0476b002f8eb264f9ed158fac82ca295ebacaed6e573f84f28f01c6c67e1b51"
+    },
+    {
+      "seq": 6,
+      "at": "2026-11-26T02:42:38.101619+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "f312b4d1f2ba2a56b1e6356a1d2fbec7b8eca8dada2e90ef9c63b5ff6f47662e",
+        "round": 1,
+        "stage": "judge",
+        "response_hash": "f2f8f10b68537ce76d0230b86aef77e4b4755ae0180911a2089c8a9a709625a1"
+      },
+      "previous_hash": "f0476b002f8eb264f9ed158fac82ca295ebacaed6e573f84f28f01c6c67e1b51",
+      "hash": "995b8b8d8aca1cd6cc6960f9113292d1c8512923cba961a7497037c36bc7986f"
+    },
+    {
+      "seq": 7,
+      "at": "2026-11-26T02:42:38.240481+00:00",
+      "kind": "branched_from",
+      "data": {
+        "round": 2,
+        "parent_round": 1
+      },
+      "previous_hash": "995b8b8d8aca1cd6cc6960f9113292d1c8512923cba961a7497037c36bc7986f",
+      "hash": "d627a3dd18b2cad19fce25f94b737193a0ed6d7435f013c1f9a1f9a8886e959d"
+    },
+    {
+      "seq": 8,
+      "at": "2026-11-26T02:42:38.240516+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "fe75b65599f7fba664a73b913ff2d44d9f649491430de3b7a3b0f1260416e92b",
+        "round": 1,
+        "stage": "planning",
+        "response_hash": "31c062b07eea2afec7d5a40ddc99e79c28c2a42777ad38292c19267cc940277e"
+      },
+      "previous_hash": "d627a3dd18b2cad19fce25f94b737193a0ed6d7435f013c1f9a1f9a8886e959d",
+      "hash": "5dc9c7cd87709b87202bb909d192c745d1a311ad6e4f0292819de24172fd2ffe"
+    },
+    {
+      "seq": 9,
+      "at": "2026-11-26T02:42:38.376664+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "df0d954f75fe48883525093f1e48c7371592febea14517fbcacfef30a4d84cb2",
+        "round": 2,
+        "stage": "generation",
+        "response_hash": "4cddde0d06e6cb6fbf22cccc5585051bfb3718507c5b225cbace8afabac7ee6f"
+      },
+      "previous_hash": "5dc9c7cd87709b87202bb909d192c745d1a311ad6e4f0292819de24172fd2ffe",
+      "hash": "ef8b043788ab5888c6e8f0dd8e3c65257329bf9d9f92f1608e3c314ff39319f9"
+    },
+    {
+      "seq": 10,
+      "at": "2026-11-26T02:42:38.511995+00:00",
+      "kind": "simulation_started",
+      "data": {
+        "attempt_id": "2:simulation:1"
+      },
+      "previous_hash": "ef8b043788ab5888c6e8f0dd8e3c65257329bf9d9f92f1608e3c314ff39319f9",
+      "hash": "2d97ddaf997f6374637a1e31d811e6e887a89991fe095adcc52898ed3ecdc38d"
+    },
+    {
+      "seq": 11,
+      "at": "2026-11-26T02:42:39.638693+00:00",
+      "kind": "simulation_collected",
+      "data": {
+        "attempt_id": "2:simulation:1",
+        "response": "rounds/round-0002/attempts/simulation-001/collected.response.json"
+      },
+      "previous_hash": "2d97ddaf997f6374637a1e31d811e6e887a89991fe095adcc52898ed3ecdc38d",
+      "hash": "c6e4a9ef7588924f2b64d83d5c5568d02e2de27b3b7900999fb961cf652ab2aa"
+    },
+    {
+      "seq": 12,
+      "at": "2026-11-26T02:42:39.718035+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "e12843faf6599e067612a8a25955a0152291e23dd5fb603dd1fc18327f0c23de",
+        "round": 2,
+        "stage": "simulation",
+        "response_hash": "f0bdbadb4b623e52f8b5d11dd04e352acc87a09dd8553b16fb9b1dbd1480c451"
+      },
+      "previous_hash": "c6e4a9ef7588924f2b64d83d5c5568d02e2de27b3b7900999fb961cf652ab2aa",
+      "hash": "eff51e5164c089b8d7c54b379f69ad9568c5a93a3a6cf0c691c9135928c5073b"
+    },
+    {
+      "seq": 13,
+      "at": "2026-11-26T02:42:39.865642+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "d85387630d6109eeef3c871d6d5d3db806e67bce6fc40bfd3d55c443fdf6f59b",
+        "round": 2,
+        "stage": "judge",
+        "response_hash": "bb73926fececfb62e134f647d0d752f2f325702e942a8b068e80f87b456ee154"
+      },
+      "previous_hash": "eff51e5164c089b8d7c54b379f69ad9568c5a93a3a6cf0c691c9135928c5073b",
+      "hash": "94e41791123d23d64a0209b6fc70fb34056ed9e4ef9c22ce44394a3d83a0f072"
+    },
+    {
+      "seq": 14,
+      "at": "2026-11-26T02:42:40.013231+00:00",
+      "kind": "branched_from",
+      "data": {
+        "round": 3,
+        "parent_round": 2
+      },
+      "previous_hash": "94e41791123d23d64a0209b6fc70fb34056ed9e4ef9c22ce44394a3d83a0f072",
+      "hash": "6b5a46e3cf9298d8b9882df7977cddab8c2d10a448616efb04a0e8254df3d7a1"
+    },
+    {
+      "seq": 15,
+      "at": "2026-11-26T02:42:40.013264+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "385f2b7bd96ed256c9201c96879192ed34b875aed4f638ce3b44f6f107e471b8",
+        "round": 2,
+        "stage": "planning",
+        "response_hash": "cbc21d07ff713ac1b4e16893d702421281b373b0d44433640cb1337611ef5dd9"
+      },
+      "previous_hash": "6b5a46e3cf9298d8b9882df7977cddab8c2d10a448616efb04a0e8254df3d7a1",
+      "hash": "e7aeb63484f5816ae811275857aa950e881be12de8244675504d1e198e03d3a9"
+    },
+    {
+      "seq": 16,
+      "at": "2026-11-26T02:42:40.164666+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "6b28ccb005386dcb7751b27ca0b86604411bf00e29adf03b86a6b1e60f6ff156",
+        "round": 3,
+        "stage": "generation",
+        "response_hash": "0716ce1958a4d0ea7b0de0df371b7a417206207be3202cee3c72066854df97ef"
+      },
+      "previous_hash": "e7aeb63484f5816ae811275857aa950e881be12de8244675504d1e198e03d3a9",
+      "hash": "a80e50492fb27d8ccdaa4ce960fbcc8dd6332635e5cd1172978d7d1c0525a934"
+    },
+    {
+      "seq": 17,
+      "at": "2026-11-26T02:42:40.303981+00:00",
+      "kind": "simulation_started",
+      "data": {
+        "attempt_id": "3:simulation:1"
+      },
+      "previous_hash": "a80e50492fb27d8ccdaa4ce960fbcc8dd6332635e5cd1172978d7d1c0525a934",
+      "hash": "e611ae19504f9e645f8b22a8be53127808f21fcbe6b8a02de327d15fcf63a828"
+    },
+    {
+      "seq": 18,
+      "at": "2026-11-26T02:42:41.428471+00:00",
+      "kind": "simulation_collected",
+      "data": {
+        "attempt_id": "3:simulation:1",
+        "response": "rounds/round-0003/attempts/simulation-001/collected.response.json"
+      },
+      "previous_hash": "e611ae19504f9e645f8b22a8be53127808f21fcbe6b8a02de327d15fcf63a828",
+      "hash": "ce88fb22365bdc69a02cc7e0298c14148e7e0e13ae1cd1744d53904bdedcccc0"
+    },
+    {
+      "seq": 19,
+      "at": "2026-11-26T02:42:41.507890+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "6cdc767de5df0349605902a3a9da9b98079c4eff2838d9e5023e176627c873d9",
+        "round": 3,
+        "stage": "simulation",
+        "response_hash": "e839960d75a10086e106a8fef291f658b9cc578f317d5fe95eda632e8867aca1"
+      },
+      "previous_hash": "ce88fb22365bdc69a02cc7e0298c14148e7e0e13ae1cd1744d53904bdedcccc0",
+      "hash": "138c23a307b09ade069780c986770068d70c7f2b93917afc9c9cefe0b7fd7bb6"
+    },
+    {
+      "seq": 20,
+      "at": "2026-11-26T02:42:41.666952+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "49f49dd2873f125352c4383581153231d642efeaf9da9cb9af010a0428df9bc0",
+        "round": 3,
+        "stage": "judge",
+        "response_hash": "d21e4422423dbd509c94adae9787b7960c7c6088f51641d90b1626877448cd83"
+      },
+      "previous_hash": "138c23a307b09ade069780c986770068d70c7f2b93917afc9c9cefe0b7fd7bb6",
+      "hash": "4eaa5f35d1417959e6169adce04f4bf854d7d6edffe402c9bb7abb8068b0dcef"
+    },
+    {
+      "seq": 21,
+      "at": "2026-11-26T02:42:41.819913+00:00",
+      "kind": "loop_stopped",
+      "data": {
+        "reason": "round_budget_exhausted",
+        "selected_round": 3
+      },
+      "previous_hash": "4eaa5f35d1417959e6169adce04f4bf854d7d6edffe402c9bb7abb8068b0dcef",
+      "hash": "5e3d3deb45c92522d7096dadae05a65ba530e559b8294260651a673300f57627"
+    },
+    {
+      "seq": 22,
+      "at": "2026-11-26T02:42:41.819945+00:00",
+      "kind": "stage_accepted",
+      "data": {
+        "request_id": "feee9130e68787cab8418e24fc531546858759200fb5e169bf90d00afbef68d0",
+        "round": 3,
+        "stage": "planning",
+        "response_hash": "7d3d3944e9115217dabc393b5863ceeef75cf1f9edef92a3ba32fb8c818ca8f1"
+      },
+      "previous_hash": "5e3d3deb45c92522d7096dadae05a65ba530e559b8294260651a673300f57627",
+      "hash": "3d06dd753dc45b31120c52f086c5207b25f4d002c045679b69a02897e6396657"
+    }
+  ],
+  "sealed": {
+    "rounds/round-0001/generation.json": "9631cf1694dcf8d714dff528561b703771359f1cc49f93dc411e686428b3c259",
+    "rounds/round-0001/evidence/attempt-001/locked-exit-1.json": "61f97287fe60e796ddfec6e680ebb079ad7e49febcbda1ce261a8cd7f0d2c899",
+    "rounds/round-0001/evidence/attempt-001/locked-exit-1.html": "2ed5e2970fd7e7e08c481ce366a7c8a8140793f4068246370667c03a9be64176",
+    "rounds/round-0001/evidence/attempt-001/wall-bump-1.json": "7cfeee9acda351be8e271630eaebc7afbfc14f22677735fd4a67d34f4caa7b5c",
+    "rounds/round-0001/evidence/attempt-001/wall-bump-1.html": "70c9b59bd30e758bb74cf57381e13b2964939f722173a8ad0d693a013009bc4a",
+    "rounds/round-0001/evidence/attempt-001/collector-1.json": "a995695f8378269c066ee702aa7dd2190200aaea59369935b770a07cc6cfdb06",
+    "rounds/round-0001/evidence/attempt-001/collector-1.html": "3541b31ae5c961ec1533cedd55376cf37e474185d4f12f209e56277a26ce36f3",
+    "rounds/round-0001/evidence/attempt-001/win-and-reset-1.json": "76cb5df1046f176798b7e4f9f349750dc2215358a1e35afce0a77ee2d1729f0c",
+    "rounds/round-0001/evidence/attempt-001/win-and-reset-1.html": "e50f23c98860aa64ede4726005ef94155b8a9d622272829c388e11165193e054",
+    "rounds/round-0001/evidence/attempt-001/last-charge-win-1.json": "afc4e3111b6b3670a63e8d2fb24f68f7a2c50ac0cfc3a2a429cead57b4443c0d",
+    "rounds/round-0001/evidence/attempt-001/last-charge-win-1.html": "33bb8343a4c1ce9d2d961cb8305fd234987a30c53c5f4d1ed6487571f310659f",
+    "rounds/round-0001/evidence/attempt-001/drain-and-reset-1.json": "25957bbd61d862c8663ed67c5742c760f001f21eccb541b515b307d80a5ea2a0",
+    "rounds/round-0001/evidence/attempt-001/drain-and-reset-1.html": "5dce08bc67202f41387c32560ebd22b9cc9ecda67e3e525badae2e20089417cd",
+    "rounds/round-0001/evidence/attempt-001/locked-then-win-1.json": "fbde0ba1388c4c2bcb5ed4a2fc2add0739d58e5401f1b5006834bd5daccc79fd",
+    "rounds/round-0001/evidence/attempt-001/locked-then-win-1.html": "5d9e9bfe3db653cba95782ead2501dfc22cc3e24670f0b5aa15c85ffb98c7a66",
+    "rounds/round-0001/simulation.json": "7928744faccf494a5468fa554c2ac986bbd255174529982b5483fbd76b1b37f0",
+    "rounds/round-0001/judge.json": "dd1476de80ccb25b566643393be97f8b277d099f512ab6c74609328af2ddb440",
+    "rounds/round-0001/assessment.json": "976bfc4c4b173bc98b73126408629d217328472eceab9efe73caee39d533645e",
+    "rounds/round-0001/planning.json": "19cebea44788d7c4f1d4fd077588d80ea1bdc563e5caabfe8dad2461bb7cebb6",
+    "rounds/round-0002/generation.json": "e6af584ffb888aee1a52952cb6bedd0a997775c3a9a7a89a4e7cdd087a66df22",
+    "rounds/round-0002/evidence/attempt-001/locked-exit-1.json": "5c8a4b6e07284bfd5b4337972c50616e7419dd1c5c3d136c03a647cf906619d0",
+    "rounds/round-0002/evidence/attempt-001/locked-exit-1.html": "3d130e51d011d584731169b70908c54711e458de569b240642367f737bc6d3ea",
+    "rounds/round-0002/evidence/attempt-001/wall-bump-1.json": "7cfeee9acda351be8e271630eaebc7afbfc14f22677735fd4a67d34f4caa7b5c",
+    "rounds/round-0002/evidence/attempt-001/wall-bump-1.html": "70c9b59bd30e758bb74cf57381e13b2964939f722173a8ad0d693a013009bc4a",
+    "rounds/round-0002/evidence/attempt-001/collector-1.json": "a995695f8378269c066ee702aa7dd2190200aaea59369935b770a07cc6cfdb06",
+    "rounds/round-0002/evidence/attempt-001/collector-1.html": "3541b31ae5c961ec1533cedd55376cf37e474185d4f12f209e56277a26ce36f3",
+    "rounds/round-0002/evidence/attempt-001/win-and-reset-1.json": "76cb5df1046f176798b7e4f9f349750dc2215358a1e35afce0a77ee2d1729f0c",
+    "rounds/round-0002/evidence/attempt-001/win-and-reset-1.html": "e50f23c98860aa64ede4726005ef94155b8a9d622272829c388e11165193e054",
+    "rounds/round-0002/evidence/attempt-001/last-charge-win-1.json": "afc4e3111b6b3670a63e8d2fb24f68f7a2c50ac0cfc3a2a429cead57b4443c0d",
+    "rounds/round-0002/evidence/attempt-001/last-charge-win-1.html": "33bb8343a4c1ce9d2d961cb8305fd234987a30c53c5f4d1ed6487571f310659f",
+    "rounds/round-0002/evidence/attempt-001/drain-and-reset-1.json": "25957bbd61d862c8663ed67c5742c760f001f21eccb541b515b307d80a5ea2a0",
+    "rounds/round-0002/evidence/attempt-001/drain-and-reset-1.html": "5dce08bc67202f41387c32560ebd22b9cc9ecda67e3e525badae2e20089417cd",
+    "rounds/round-0002/evidence/attempt-001/locked-then-win-1.json": "144433552f79640089182dc41b61e7f3699764490b644c825255a62e148a4cc6",
+    "rounds/round-0002/evidence/attempt-001/locked-then-win-1.html": "3b345c39ffce491e4575fc755986dd4b99b001464008f9dea511efb6b1bc7700",
+    "rounds/round-0002/simulation.json": "9e3af93ee5d1750a340b3ea3504cb7f7392e5e7ed80e595300c3563d623ad896",
+    "rounds/round-0002/judge.json": "a8a98c60dd64691c3b2f602d1d057ebc95fc61c40f8632aa58e1b86aaeae1f8d",
+    "rounds/round-0002/assessment.json": "816c942232321cd78c61bae1fa34531ac11626dcbf70df06d0aa6a1ce11184be",
+    "rounds/round-0002/planning.json": "bd9ba9b51e48414a25e4f9cc16d28bb2f3aa600c00c758f37016ec97341fc1a1",
+    "rounds/round-0003/generation.json": "32b74d3cfd7892a18a378dadc1aa2623fd0d4660a533c499320b7a711c16eac5",
+    "rounds/round-0003/evidence/attempt-001/locked-exit-1.json": "d0f6de73db1d21cc9093bb3aed469339461c4a90e95ca508a30ecaba19d3b653",
+    "rounds/round-0003/evidence/attempt-001/locked-exit-1.html": "7ec8d61e70c3c3b413718b453d5a09368105055bbb89087dea8643e65fd62f5f",
+    "rounds/round-0003/evidence/attempt-001/wall-bump-1.json": "c6d6fa7d62e55de94876d24797ec5adc3602606b12d2fb3ec6ac073c30db7538",
+    "rounds/round-0003/evidence/attempt-001/wall-bump-1.html": "31a4a6eefff1ac91d51ad66035715a6026def4e1d7f1a004a219295a410552b4",
+    "rounds/round-0003/evidence/attempt-001/collector-1.json": "a995695f8378269c066ee702aa7dd2190200aaea59369935b770a07cc6cfdb06",
+    "rounds/round-0003/evidence/attempt-001/collector-1.html": "3541b31ae5c961ec1533cedd55376cf37e474185d4f12f209e56277a26ce36f3",
+    "rounds/round-0003/evidence/attempt-001/win-and-reset-1.json": "76cb5df1046f176798b7e4f9f349750dc2215358a1e35afce0a77ee2d1729f0c",
+    "rounds/round-0003/evidence/attempt-001/win-and-reset-1.html": "e50f23c98860aa64ede4726005ef94155b8a9d622272829c388e11165193e054",
+    "rounds/round-0003/evidence/attempt-001/last-charge-win-1.json": "afc4e3111b6b3670a63e8d2fb24f68f7a2c50ac0cfc3a2a429cead57b4443c0d",
+    "rounds/round-0003/evidence/attempt-001/last-charge-win-1.html": "33bb8343a4c1ce9d2d961cb8305fd234987a30c53c5f4d1ed6487571f310659f",
+    "rounds/round-0003/evidence/attempt-001/drain-and-reset-1.json": "25957bbd61d862c8663ed67c5742c760f001f21eccb541b515b307d80a5ea2a0",
+    "rounds/round-0003/evidence/attempt-001/drain-and-reset-1.html": "5dce08bc67202f41387c32560ebd22b9cc9ecda67e3e525badae2e20089417cd",
+    "rounds/round-0003/evidence/attempt-001/locked-then-win-1.json": "e71d4d9a11fca0c540f75a1f4f58d5eeb6852dd34e96459cd753c475bc1fa29e",
+    "rounds/round-0003/evidence/attempt-001/locked-then-win-1.html": "6046b59e0dda116a71944b2f468e63455f4065d6b8c2e340ba5d00c83626b8ed",
+    "rounds/round-0003/simulation.json": "bb7a99d484e9d5e97672c113e83cbd86d0bf327ee74c9aadefd0e4ebe77e5899",
+    "rounds/round-0003/judge.json": "20b1f20de12ec49b109592eb5c54edb93f009e21a7ceff0112477634d04ddd0f",
+    "rounds/round-0003/assessment.json": "3c9c8ca2f4ae0db16c7728305a0626fd253e332f571be86189a5da7349dc925c",
+    "rounds/round-0003/planning.json": "81c558a968d2fbdfd42e9c66832097c6de0c4cd8bf1400beea27973fe558ef21"
+  },
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0,
+    "unknown_stages": 9
+  },
+  "attempts": {
+    "1:simulation": 1,
+    "2:simulation": 1,
+    "3:simulation": 1
+  },
+  "failure_streaks": {
+    "1:simulation": 0,
+    "2:simulation": 0,
+    "3:simulation": 0
+  },
+  "usage_ledger": {
+    "owner:15a1be98b485c1e80cae2b189a03911a60a35e1f4cb926c5f4645b8e36530bf2": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:3ed2824acc4b3b2800d68c19f035e121e5e032f27ff45b8dcf260fdfde4e3166": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0
+    },
+    "owner:f312b4d1f2ba2a56b1e6356a1d2fbec7b8eca8dada2e90ef9c63b5ff6f47662e": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:fe75b65599f7fba664a73b913ff2d44d9f649491430de3b7a3b0f1260416e92b": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:df0d954f75fe48883525093f1e48c7371592febea14517fbcacfef30a4d84cb2": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:e12843faf6599e067612a8a25955a0152291e23dd5fb603dd1fc18327f0c23de": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0
+    },
+    "owner:d85387630d6109eeef3c871d6d5d3db806e67bce6fc40bfd3d55c443fdf6f59b": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:385f2b7bd96ed256c9201c96879192ed34b875aed4f638ce3b44f6f107e471b8": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:6b28ccb005386dcb7751b27ca0b86604411bf00e29adf03b86a6b1e60f6ff156": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:6cdc767de5df0349605902a3a9da9b98079c4eff2838d9e5023e176627c873d9": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost_usd": 0
+    },
+    "owner:49f49dd2873f125352c4383581153231d642efeaf9da9cb9af010a0428df9bc0": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "owner:feee9130e68787cab8418e24fc531546858759200fb5e169bf90d00afbef68d0": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    }
+  },
+  "pending_attempt": null,
+  "stop_reason": "round_budget_exhausted",
+  "pending_stop": null,
+  "origin": "cold_start",
+  "environment_hash": "1c1139f090f41a40928659605c2699091df899efed9039d348e4db35f9713f24"
+}

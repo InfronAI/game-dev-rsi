@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "request_id": "15a1be98b485c1e80cae2b189a03911a60a35e1f4cb926c5f4645b8e36530bf2",
+  "run_id": "demo",
+  "stage": "generation",
+  "round": 1,
+  "case_hash": "7233c3fadec5b07db2204a7d785b01c12036edd23f0956ecbf4b7137905000fb",
+  "identity": {
+    "schema_version": 1,
+    "agent": "scripted-demo",
+    "model": "none",
+    "agent_version": "unknown",
+    "model_version": "unknown",
+    "reasoning_effort": "unknown",
+    "tools": [],
+    "parameters": {}
+  },
+  "case_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/case",
+  "workspace": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/workspace",
+  "artifact_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/artifact",
+  "evidence_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/evidence",
+  "split": "development",
+  "dataset": {
+    "split": "development",
+    "repeats": 1,
+    "samples": [
+      {
+        "id": "locked-exit",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "right",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "wall-bump",
+        "payload": {
+          "actions": [
+            "up",
+            "up",
+            "left",
+            "left",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "collector",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "win-and-reset",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up",
+            "left",
+            "reset"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "last-charge-win",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "right",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "drain-and-reset",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "reset"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "locked-then-win",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "right",
+            "right",
+            "left",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      }
+    ]
+  },
+  "datasets": {
+    "validation": {
+      "split": "validation",
+      "repeats": 1,
+      "samples": [
+        {
+          "id": "locked-exit",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right"
+            ]
+          }
+        },
+        {
+          "id": "wall-bump",
+          "payload": {
+            "actions": [
+              "up",
+              "up",
+              "left",
+              "left",
+              "right"
+            ]
+          }
+        },
+        {
+          "id": "collector",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "right"
+            ]
+          }
+        }
+      ]
+    },
+    "test": {
+      "split": "test",
+      "repeats": 1,
+      "samples": [
+        {
+          "id": "win-and-reset",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up",
+              "left",
+              "reset"
+            ]
+          }
+        },
+        {
+          "id": "last-charge-win",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "right",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up"
+            ]
+          }
+        },
+        {
+          "id": "drain-and-reset",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "reset"
+            ]
+          }
+        },
+        {
+          "id": "locked-then-win",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "left",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "review_mode": "owner_self_review",
+  "response_path": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0001/generation.response.json",
+  "budget": {
+    "max_rounds": 3,
+    "max_wall_seconds": 28800,
+    "max_stage_attempts": 3
+  },
+  "usage_so_far": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0,
+    "unknown_stages": 0
+  },
+  "budget_remaining": {
+    "rounds": 3,
+    "wall_seconds": 28799.932,
+    "usage_complete": true
+  },
+  "instructions": "You are the loading Agent and the creator. Read frozen case goals, prompt, rubric and BOTH sample sets. Implement in workspace only, following the previous plan. Return summary, changes and optional usage. Do not stop after the first demo: submit, simulate, inspect, self-review, plan and regenerate."
+}

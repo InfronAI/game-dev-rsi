@@ -1,0 +1,204 @@
+{
+  "request_id": "6cdc767de5df0349605902a3a9da9b98079c4eff2838d9e5023e176627c873d9",
+  "confounds": [],
+  "diagnostic_only": false,
+  "environment": {
+    "collector": "relay-state-v1",
+    "python": "3.15.2",
+    "node": "v26.12.0"
+  },
+  "samples": [
+    {
+      "id": "locked-exit:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "attempt-001/locked-exit-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "attempt-001/locked-exit-1.html"
+        }
+      ]
+    },
+    {
+      "id": "wall-bump:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "attempt-001/wall-bump-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "attempt-001/wall-bump-1.html"
+        }
+      ]
+    },
+    {
+      "id": "collector:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "attempt-001/collector-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "attempt-001/collector-1.html"
+        }
+      ]
+    },
+    {
+      "id": "win-and-reset:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "attempt-001/win-and-reset-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "attempt-001/win-and-reset-1.html"
+        }
+      ]
+    },
+    {
+      "id": "last-charge-win:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "attempt-001/last-charge-win-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "attempt-001/last-charge-win-1.html"
+        }
+      ]
+    },
+    {
+      "id": "drain-and-reset:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "attempt-001/drain-and-reset-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "attempt-001/drain-and-reset-1.html"
+        }
+      ]
+    },
+    {
+      "id": "locked-then-win:1",
+      "status": "completed",
+      "metrics": {
+        "movement": 1.0,
+        "resources": 1.0
+      },
+      "evidence": [
+        {
+          "kind": "runtime",
+          "path": "attempt-001/locked-then-win-1.json"
+        },
+        {
+          "kind": "diagnostic",
+          "path": "attempt-001/locked-then-win-1.html"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0
+  },
+  "evidence_registry": {
+    "attempt-001/locked-exit-1.json": {
+      "kind": "runtime",
+      "sha256": "d0f6de73db1d21cc9093bb3aed469339461c4a90e95ca508a30ecaba19d3b653"
+    },
+    "attempt-001/locked-exit-1.html": {
+      "kind": "diagnostic",
+      "sha256": "7ec8d61e70c3c3b413718b453d5a09368105055bbb89087dea8643e65fd62f5f"
+    },
+    "attempt-001/wall-bump-1.json": {
+      "kind": "runtime",
+      "sha256": "c6d6fa7d62e55de94876d24797ec5adc3602606b12d2fb3ec6ac073c30db7538"
+    },
+    "attempt-001/wall-bump-1.html": {
+      "kind": "diagnostic",
+      "sha256": "31a4a6eefff1ac91d51ad66035715a6026def4e1d7f1a004a219295a410552b4"
+    },
+    "attempt-001/collector-1.json": {
+      "kind": "runtime",
+      "sha256": "a995695f8378269c066ee702aa7dd2190200aaea59369935b770a07cc6cfdb06"
+    },
+    "attempt-001/collector-1.html": {
+      "kind": "diagnostic",
+      "sha256": "3541b31ae5c961ec1533cedd55376cf37e474185d4f12f209e56277a26ce36f3"
+    },
+    "attempt-001/win-and-reset-1.json": {
+      "kind": "runtime",
+      "sha256": "76cb5df1046f176798b7e4f9f349750dc2215358a1e35afce0a77ee2d1729f0c"
+    },
+    "attempt-001/win-and-reset-1.html": {
+      "kind": "diagnostic",
+      "sha256": "e50f23c98860aa64ede4726005ef94155b8a9d622272829c388e11165193e054"
+    },
+    "attempt-001/last-charge-win-1.json": {
+      "kind": "runtime",
+      "sha256": "afc4e3111b6b3670a63e8d2fb24f68f7a2c50ac0cfc3a2a429cead57b4443c0d"
+    },
+    "attempt-001/last-charge-win-1.html": {
+      "kind": "diagnostic",
+      "sha256": "33bb8343a4c1ce9d2d961cb8305fd234987a30c53c5f4d1ed6487571f310659f"
+    },
+    "attempt-001/drain-and-reset-1.json": {
+      "kind": "runtime",
+      "sha256": "25957bbd61d862c8663ed67c5742c760f001f21eccb541b515b307d80a5ea2a0"
+    },
+    "attempt-001/drain-and-reset-1.html": {
+      "kind": "diagnostic",
+      "sha256": "5dce08bc67202f41387c32560ebd22b9cc9ecda67e3e525badae2e20089417cd"
+    },
+    "attempt-001/locked-then-win-1.json": {
+      "kind": "runtime",
+      "sha256": "e71d4d9a11fca0c540f75a1f4f58d5eeb6852dd34e96459cd753c475bc1fa29e"
+    },
+    "attempt-001/locked-then-win-1.html": {
+      "kind": "diagnostic",
+      "sha256": "6046b59e0dda116a71944b2f468e63455f4065d6b8c2e340ba5d00c83626b8ed"
+    }
+  },
+  "artifact_hash": "2f891e9065518baa7c2f8d0f7c0ae5b44e604189a5b538b3f84c427a38a809ef",
+  "case_hash": "7233c3fadec5b07db2204a7d785b01c12036edd23f0956ecbf4b7137905000fb",
+  "accepted_at": "2026-11-26T02:42:41.505901+00:00"
+}

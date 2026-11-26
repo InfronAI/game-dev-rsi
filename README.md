@@ -29,7 +29,7 @@ The demo seeds two known defects into a copy of the reference. Its scripted deve
 
 Exact expected scores and artifact SHA-256 fingerprints are recorded in [the demo baseline](docs/demo-baseline.json) and checked by the workflow test.
 
-The default demo stops at its three-round budget after saving the last plan. Use a fresh run ID for another trial:
+The repository includes a completed run named `demo`. Running the example again creates a fresh session and prints its directory. Each run stops after three rounds. To name a new run or reopen the bundled one:
 
 ```sh
 python3 examples/demo.py --run-id repeat
@@ -62,7 +62,7 @@ node --test tests/rules.test.mjs
 python3 -m unittest discover -s tests -v
 ```
 
-For browser verification, install Chrome or Chromium and set `CHROME_BIN` to its executable. After the demo:
+For browser verification, install Chrome or Chromium and set `CHROME_BIN` to its executable. Test the game and replay from the bundled run:
 
 ```sh
 python3 tests/browser_smoke.py \
@@ -80,7 +80,7 @@ The smoke test creates a disposable browser profile, serves the checkout on a te
 | `cases/relay-vault/` | Original game, specification, rubric, routes and local replay collector |
 | `examples/demo.py` | Reproducible three-round scripted developer |
 | `tests/` | Rule, workflow, integrity and browser checks |
-| `experiments/`, `showcase/` | Locally generated runs and gallery; excluded from version control |
+| `experiments/`, `showcase/` | Bundled three-round run, playable builds, replay evidence and gallery |
 
 The example measures state parity on seven public routes. A perfect result covers those checks. Visual fidelity, novel player inputs and generalization require additional evidence. Execute trusted case collectors and game code in an environment appropriate to their origin.
 

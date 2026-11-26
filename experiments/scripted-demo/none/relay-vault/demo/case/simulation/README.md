@@ -1,0 +1,2 @@
+# Paired state replay
+The collector loads the frozen reference and candidate logic in separate Node processes for each route. It compares every post-input state, including reset and inputs after terminal states, and saves both traces, per-checkpoint matches, and the first difference. A candidate error counts against the candidate. A failing reference or unavailable runtime is an infrastructure failure. Play the browser entry point separately to review visuals and controls. Only run trusted local artifacts: a Node module executes with the current user's permissions.

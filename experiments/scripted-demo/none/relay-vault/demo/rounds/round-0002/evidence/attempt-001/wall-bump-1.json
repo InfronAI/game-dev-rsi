@@ -1,0 +1,139 @@
+{
+  "route": "wall-bump",
+  "error": null,
+  "checkpoints": [
+    {
+      "step": 0,
+      "input": "start",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 1,
+      "input": "up",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 11,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": [
+        "power"
+      ]
+    },
+    {
+      "step": 2,
+      "input": "up",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 10,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": [
+        "power"
+      ]
+    },
+    {
+      "step": 3,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 9,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": [
+        "power"
+      ]
+    },
+    {
+      "step": 4,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 8,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": [
+        "power"
+      ]
+    },
+    {
+      "step": 5,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 11,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 7,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": [
+        "power"
+      ]
+    }
+  ],
+  "ratios": {
+    "movement": 1.0,
+    "resources": 0.16666666666666666
+  },
+  "first_difference": 1
+}

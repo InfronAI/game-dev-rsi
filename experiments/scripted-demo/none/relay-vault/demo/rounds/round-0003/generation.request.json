@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "request_id": "6b28ccb005386dcb7751b27ca0b86604411bf00e29adf03b86a6b1e60f6ff156",
+  "run_id": "demo",
+  "stage": "generation",
+  "round": 3,
+  "case_hash": "7233c3fadec5b07db2204a7d785b01c12036edd23f0956ecbf4b7137905000fb",
+  "identity": {
+    "schema_version": 1,
+    "agent": "scripted-demo",
+    "model": "none",
+    "agent_version": "unknown",
+    "model_version": "unknown",
+    "reasoning_effort": "unknown",
+    "tools": [],
+    "parameters": {}
+  },
+  "case_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/case",
+  "workspace": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/workspace",
+  "artifact_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/artifact",
+  "evidence_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/evidence",
+  "split": "development",
+  "dataset": {
+    "split": "development",
+    "repeats": 1,
+    "samples": [
+      {
+        "id": "locked-exit",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "right",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "wall-bump",
+        "payload": {
+          "actions": [
+            "up",
+            "up",
+            "left",
+            "left",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "collector",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "win-and-reset",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up",
+            "left",
+            "reset"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "last-charge-win",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "right",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "drain-and-reset",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "reset"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "locked-then-win",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "right",
+            "right",
+            "left",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      }
+    ]
+  },
+  "datasets": {
+    "validation": {
+      "split": "validation",
+      "repeats": 1,
+      "samples": [
+        {
+          "id": "locked-exit",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right"
+            ]
+          }
+        },
+        {
+          "id": "wall-bump",
+          "payload": {
+            "actions": [
+              "up",
+              "up",
+              "left",
+              "left",
+              "right"
+            ]
+          }
+        },
+        {
+          "id": "collector",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "right"
+            ]
+          }
+        }
+      ]
+    },
+    "test": {
+      "split": "test",
+      "repeats": 1,
+      "samples": [
+        {
+          "id": "win-and-reset",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up",
+              "left",
+              "reset"
+            ]
+          }
+        },
+        {
+          "id": "last-charge-win",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "right",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up"
+            ]
+          }
+        },
+        {
+          "id": "drain-and-reset",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "reset"
+            ]
+          }
+        },
+        {
+          "id": "locked-then-win",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "left",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "review_mode": "owner_self_review",
+  "response_path": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0003/generation.response.json",
+  "budget": {
+    "max_rounds": 3,
+    "max_wall_seconds": 28800,
+    "max_stage_attempts": 3
+  },
+  "usage_so_far": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0,
+    "unknown_stages": 6
+  },
+  "budget_remaining": {
+    "rounds": 1,
+    "wall_seconds": 28796.354,
+    "usage_complete": false
+  },
+  "instructions": "You are the loading Agent and the creator. Read frozen case goals, prompt, rubric and BOTH sample sets. Implement in workspace only, following the previous plan. Return summary, changes and optional usage. Do not stop after the first demo: submit, simulate, inspect, self-review, plan and regenerate.",
+  "plan": {
+    "hypothesis": "Preserve power on a rejected move.",
+    "strategy": "wall-cost",
+    "stop_the_line": true,
+    "expected_gain_points": 0,
+    "actions": [
+      {
+        "addresses": [
+          "locked-exit",
+          "wall-bump",
+          "locked-then-win"
+        ],
+        "change": "Preserve power on a rejected move.",
+        "expected_effect": "Keep accepted routes stable and remove the observed discrepancy.",
+        "validation": "Replay both public suites and compare each state."
+      }
+    ],
+    "request_id": "385f2b7bd96ed256c9201c96879192ed34b875aed4f638ce3b44f6f107e471b8",
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "accepted_at": "2026-11-26T02:42:40.011215+00:00"
+  },
+  "previous_judgement": {
+    "reviews": [
+      {
+        "sample_id": "locked-exit:1",
+        "dimensions": {
+          "movement": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/locked-exit-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          },
+          "resources": {
+            "score": 80.0,
+            "evidence": [
+              "attempt-001/locked-exit-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 0.8000"
+          }
+        },
+        "gates": {
+          "transition_parity": {
+            "status": "fail",
+            "evidence": [
+              "attempt-001/locked-exit-1.json"
+            ],
+            "reason": "First mismatch at input 4 (right): power."
+          }
+        }
+      },
+      {
+        "sample_id": "wall-bump:1",
+        "dimensions": {
+          "movement": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/wall-bump-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          },
+          "resources": {
+            "score": 16.666666666666664,
+            "evidence": [
+              "attempt-001/wall-bump-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 0.1667"
+          }
+        },
+        "gates": {
+          "transition_parity": {
+            "status": "fail",
+            "evidence": [
+              "attempt-001/wall-bump-1.json"
+            ],
+            "reason": "First mismatch at input 1 (up): power."
+          }
+        }
+      },
+      {
+        "sample_id": "collector:1",
+        "dimensions": {
+          "movement": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/collector-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          },
+          "resources": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/collector-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          }
+        },
+        "gates": {
+          "transition_parity": {
+            "status": "pass",
+            "evidence": [
+              "attempt-001/collector-1.json"
+            ],
+            "reason": "All checkpoints match."
+          }
+        }
+      },
+      {
+        "sample_id": "win-and-reset:1",
+        "dimensions": {
+          "movement": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/win-and-reset-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          },
+          "resources": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/win-and-reset-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          }
+        },
+        "gates": {
+          "transition_parity": {
+            "status": "pass",
+            "evidence": [
+              "attempt-001/win-and-reset-1.json"
+            ],
+            "reason": "All checkpoints match."
+          }
+        }
+      },
+      {
+        "sample_id": "last-charge-win:1",
+        "dimensions": {
+          "movement": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/last-charge-win-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          },
+          "resources": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/last-charge-win-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          }
+        },
+        "gates": {
+          "transition_parity": {
+            "status": "pass",
+            "evidence": [
+              "attempt-001/last-charge-win-1.json"
+            ],
+            "reason": "All checkpoints match."
+          }
+        }
+      },
+      {
+        "sample_id": "drain-and-reset:1",
+        "dimensions": {
+          "movement": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/drain-and-reset-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          },
+          "resources": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/drain-and-reset-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          }
+        },
+        "gates": {
+          "transition_parity": {
+            "status": "pass",
+            "evidence": [
+              "attempt-001/drain-and-reset-1.json"
+            ],
+            "reason": "All checkpoints match."
+          }
+        }
+      },
+      {
+        "sample_id": "locked-then-win:1",
+        "dimensions": {
+          "movement": {
+            "score": 100.0,
+            "evidence": [
+              "attempt-001/locked-then-win-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 1.0000"
+          },
+          "resources": {
+            "score": 33.33333333333333,
+            "evidence": [
+              "attempt-001/locked-then-win-1.json"
+            ],
+            "reason": "Matching checkpoint fraction: 0.3333"
+          }
+        },
+        "gates": {
+          "transition_parity": {
+            "status": "fail",
+            "evidence": [
+              "attempt-001/locked-then-win-1.json"
+            ],
+            "reason": "First mismatch at input 4 (right): power."
+          }
+        }
+      }
+    ],
+    "issues": [
+      {
+        "id": "locked-exit",
+        "dimension": "resources",
+        "severity": "major",
+        "description": "First mismatch at input 4 (right): power.",
+        "reproduce": "Replay locked-exit:1.",
+        "evidence": [
+          "attempt-001/locked-exit-1.json"
+        ]
+      },
+      {
+        "id": "wall-bump",
+        "dimension": "resources",
+        "severity": "major",
+        "description": "First mismatch at input 1 (up): power.",
+        "reproduce": "Replay wall-bump:1.",
+        "evidence": [
+          "attempt-001/wall-bump-1.json"
+        ]
+      },
+      {
+        "id": "locked-then-win",
+        "dimension": "resources",
+        "severity": "major",
+        "description": "First mismatch at input 4 (right): power.",
+        "reproduce": "Replay locked-then-win:1.",
+        "evidence": [
+          "attempt-001/locked-then-win-1.json"
+        ]
+      }
+    ],
+    "summary": "3 routes differ from the reference.",
+    "request_id": "d85387630d6109eeef3c871d6d5d3db806e67bce6fc40bfd3d55c443fdf6f59b",
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cost_usd": null
+    },
+    "assessment": {
+      "score": 89.071429,
+      "sample_scores": {
+        "locked-exit:1": 91.0,
+        "wall-bump:1": 62.5,
+        "collector:1": 100.0,
+        "win-and-reset:1": 100.0,
+        "last-charge-win:1": 100.0,
+        "drain-and-reset:1": 100.0,
+        "locked-then-win:1": 70.0
+      },
+      "gates_pass": false,
+      "eligible": false,
+      "dimension_scores": {
+        "movement": 100.0,
+        "resources": 75.71428571428571
+      },
+      "gate_status": {
+        "transition_parity": "fail"
+      }
+    },
+    "reviewer": {
+      "mode": "owner_self_review",
+      "agent": "scripted-demo",
+      "model": "none"
+    },
+    "accepted_at": "2026-11-26T02:42:39.863620+00:00"
+  }
+}

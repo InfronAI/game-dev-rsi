@@ -1,0 +1,235 @@
+{
+  "reviews": [
+    {
+      "sample_id": "locked-exit:1",
+      "dimensions": {
+        "movement": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/locked-exit-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        },
+        "resources": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/locked-exit-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        }
+      },
+      "gates": {
+        "transition_parity": {
+          "status": "pass",
+          "evidence": [
+            "attempt-001/locked-exit-1.json"
+          ],
+          "reason": "All checkpoints match."
+        }
+      }
+    },
+    {
+      "sample_id": "wall-bump:1",
+      "dimensions": {
+        "movement": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/wall-bump-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        },
+        "resources": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/wall-bump-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        }
+      },
+      "gates": {
+        "transition_parity": {
+          "status": "pass",
+          "evidence": [
+            "attempt-001/wall-bump-1.json"
+          ],
+          "reason": "All checkpoints match."
+        }
+      }
+    },
+    {
+      "sample_id": "collector:1",
+      "dimensions": {
+        "movement": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/collector-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        },
+        "resources": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/collector-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        }
+      },
+      "gates": {
+        "transition_parity": {
+          "status": "pass",
+          "evidence": [
+            "attempt-001/collector-1.json"
+          ],
+          "reason": "All checkpoints match."
+        }
+      }
+    },
+    {
+      "sample_id": "win-and-reset:1",
+      "dimensions": {
+        "movement": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/win-and-reset-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        },
+        "resources": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/win-and-reset-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        }
+      },
+      "gates": {
+        "transition_parity": {
+          "status": "pass",
+          "evidence": [
+            "attempt-001/win-and-reset-1.json"
+          ],
+          "reason": "All checkpoints match."
+        }
+      }
+    },
+    {
+      "sample_id": "last-charge-win:1",
+      "dimensions": {
+        "movement": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/last-charge-win-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        },
+        "resources": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/last-charge-win-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        }
+      },
+      "gates": {
+        "transition_parity": {
+          "status": "pass",
+          "evidence": [
+            "attempt-001/last-charge-win-1.json"
+          ],
+          "reason": "All checkpoints match."
+        }
+      }
+    },
+    {
+      "sample_id": "drain-and-reset:1",
+      "dimensions": {
+        "movement": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/drain-and-reset-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        },
+        "resources": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/drain-and-reset-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        }
+      },
+      "gates": {
+        "transition_parity": {
+          "status": "pass",
+          "evidence": [
+            "attempt-001/drain-and-reset-1.json"
+          ],
+          "reason": "All checkpoints match."
+        }
+      }
+    },
+    {
+      "sample_id": "locked-then-win:1",
+      "dimensions": {
+        "movement": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/locked-then-win-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        },
+        "resources": {
+          "score": 100.0,
+          "evidence": [
+            "attempt-001/locked-then-win-1.json"
+          ],
+          "reason": "Matching checkpoint fraction: 1.0000"
+        }
+      },
+      "gates": {
+        "transition_parity": {
+          "status": "pass",
+          "evidence": [
+            "attempt-001/locked-then-win-1.json"
+          ],
+          "reason": "All checkpoints match."
+        }
+      }
+    }
+  ],
+  "issues": [],
+  "summary": "0 routes differ from the reference.",
+  "request_id": "49f49dd2873f125352c4383581153231d642efeaf9da9cb9af010a0428df9bc0",
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  "assessment": {
+    "score": 100.0,
+    "sample_scores": {
+      "locked-exit:1": 100.0,
+      "wall-bump:1": 100.0,
+      "collector:1": 100.0,
+      "win-and-reset:1": 100.0,
+      "last-charge-win:1": 100.0,
+      "drain-and-reset:1": 100.0,
+      "locked-then-win:1": 100.0
+    },
+    "gates_pass": true,
+    "eligible": true,
+    "dimension_scores": {
+      "movement": 100.0,
+      "resources": 100.0
+    },
+    "gate_status": {
+      "transition_parity": "pass"
+    }
+  },
+  "reviewer": {
+    "mode": "owner_self_review",
+    "agent": "scripted-demo",
+    "model": "none"
+  },
+  "accepted_at": "2026-11-26T02:42:41.664869+00:00"
+}

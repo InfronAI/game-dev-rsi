@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "request_id": "e12843faf6599e067612a8a25955a0152291e23dd5fb603dd1fc18327f0c23de",
+  "run_id": "demo",
+  "stage": "simulation",
+  "round": 2,
+  "case_hash": "7233c3fadec5b07db2204a7d785b01c12036edd23f0956ecbf4b7137905000fb",
+  "identity": {
+    "schema_version": 1,
+    "agent": "scripted-demo",
+    "model": "none",
+    "agent_version": "unknown",
+    "model_version": "unknown",
+    "reasoning_effort": "unknown",
+    "tools": [],
+    "parameters": {}
+  },
+  "case_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/case",
+  "workspace": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/workspace",
+  "artifact_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/artifact",
+  "evidence_dir": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/evidence/attempt-001",
+  "split": "development",
+  "dataset": {
+    "split": "development",
+    "repeats": 1,
+    "samples": [
+      {
+        "id": "locked-exit",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "right",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "wall-bump",
+        "payload": {
+          "actions": [
+            "up",
+            "up",
+            "left",
+            "left",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "collector",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "right"
+          ]
+        },
+        "source_split": "validation",
+        "repeats": 1
+      },
+      {
+        "id": "win-and-reset",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up",
+            "left",
+            "reset"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "last-charge-win",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "right",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "drain-and-reset",
+        "payload": {
+          "actions": [
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "left",
+            "right",
+            "reset"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      },
+      {
+        "id": "locked-then-win",
+        "payload": {
+          "actions": [
+            "right",
+            "right",
+            "right",
+            "right",
+            "left",
+            "down",
+            "down",
+            "right",
+            "right",
+            "up",
+            "up"
+          ]
+        },
+        "source_split": "test",
+        "repeats": 1
+      }
+    ]
+  },
+  "datasets": {
+    "validation": {
+      "split": "validation",
+      "repeats": 1,
+      "samples": [
+        {
+          "id": "locked-exit",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right"
+            ]
+          }
+        },
+        {
+          "id": "wall-bump",
+          "payload": {
+            "actions": [
+              "up",
+              "up",
+              "left",
+              "left",
+              "right"
+            ]
+          }
+        },
+        {
+          "id": "collector",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "right"
+            ]
+          }
+        }
+      ]
+    },
+    "test": {
+      "split": "test",
+      "repeats": 1,
+      "samples": [
+        {
+          "id": "win-and-reset",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up",
+              "left",
+              "reset"
+            ]
+          }
+        },
+        {
+          "id": "last-charge-win",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "right",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up"
+            ]
+          }
+        },
+        {
+          "id": "drain-and-reset",
+          "payload": {
+            "actions": [
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "left",
+              "right",
+              "reset"
+            ]
+          }
+        },
+        {
+          "id": "locked-then-win",
+          "payload": {
+            "actions": [
+              "right",
+              "right",
+              "right",
+              "right",
+              "left",
+              "down",
+              "down",
+              "right",
+              "right",
+              "up",
+              "up"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "review_mode": "owner_self_review",
+  "response_path": "/Users/apple/Projects/game-dev-rsi/experiments/scripted-demo/none/relay-vault/demo/rounds/round-0002/attempts/simulation-001/response.json",
+  "budget": {
+    "max_rounds": 3,
+    "max_wall_seconds": 28800,
+    "max_stage_attempts": 3
+  },
+  "usage_so_far": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0,
+    "unknown_stages": 4
+  },
+  "budget_remaining": {
+    "rounds": 2,
+    "wall_seconds": 28797.932,
+    "usage_complete": false
+  },
+  "instructions": "You perform this stage using your available tools. The optional simulate command collects case-specific local evidence only. Inspect it and add any task-specific runtime evidence before submitting; it does not review or advance the stage. Keep the artifact and case unchanged. Return request_id, all samples, environment, confounds, diagnostic_only. If tooling is unavailable report the actual blocker; never invent observations.",
+  "artifact_hash": "177a07297efbb2aeca8cfff99971ae35415aaa492b6d677a4e7aa2eec6656b40",
+  "rubric": {
+    "scale": [
+      0,
+      100
+    ],
+    "evidence_policy": {
+      "score_cap_without_observation": 0,
+      "observation_kinds": [
+        "runtime"
+      ]
+    },
+    "gates": {
+      "transition_parity": "Every checkpoint matches the reference on all five state fields."
+    },
+    "dimensions": [
+      {
+        "id": "movement",
+        "weight": 0.55,
+        "description": "Coordinates and game phase. Score the percentage of matching checkpoints on this route.",
+        "metrics": [
+          "movement"
+        ],
+        "anchors": {
+          "0": "No checkpoints match, or evidence is missing.",
+          "100": "All checkpoints match."
+        }
+      },
+      {
+        "id": "resources",
+        "weight": 0.45,
+        "description": "Power and collected relays. Score the percentage of matching checkpoints on this route.",
+        "metrics": [
+          "resources"
+        ],
+        "anchors": {
+          "0": "No checkpoints match, or evidence is missing.",
+          "100": "All checkpoints match."
+        }
+      }
+    ]
+  }
+}

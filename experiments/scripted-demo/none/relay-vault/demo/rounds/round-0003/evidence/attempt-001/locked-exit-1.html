@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relay Vault | Paired replay</title>
+<style>body{background:#101c2d;color:#edf4ff;font:16px/1.6 system-ui;margin:4vw auto;padding:0 18px;max-width:940px}h1{font:36px Georgia,serif}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.map{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}.tile{aspect-ratio:1;display:grid;place-items:center;background:#344b63}.wall{background:#203046}.rover{background:#9bf7dd;color:#193442}.controls{display:flex;gap:15px;align-items:center;flex-wrap:wrap}input{flex:1}button{padding:9px 14px;font:inherit}#difference{color:#ffcd8c}@media(max-width:550px){h2{font-size:16px}.pair{gap:8px}}</style>
+<main><h1 id="route"></h1><p>Recorded states on the reference board</p>
+<div class="pair"><section><h2>Reference</h2><div id="expected"></div></section><section><h2>Candidate</h2><div id="observed"></div></section></div>
+<p class="controls"><button id="play">Play</button><label for="step">Step</label><input id="step" type="range" value="0" min="0"><output id="position"></output></p><p id="difference" aria-live="polite"></p></main>
+<script type="application/json" id="data">{"route": "locked-exit", "error": null, "checkpoints": [{"step": 0, "input": "start", "expected": {"x": 1, "y": 1, "power": 12, "relays": [], "phase": "active"}, "observed": {"x": 1, "y": 1, "power": 12, "relays": [], "phase": "active"}, "different": []}, {"step": 1, "input": "right", "expected": {"x": 2, "y": 1, "power": 11, "relays": ["2,1"], "phase": "active"}, "observed": {"x": 2, "y": 1, "power": 11, "relays": ["2,1"], "phase": "active"}, "different": []}, {"step": 2, "input": "right", "expected": {"x": 3, "y": 1, "power": 10, "relays": ["2,1"], "phase": "active"}, "observed": {"x": 3, "y": 1, "power": 10, "relays": ["2,1"], "phase": "active"}, "different": []}, {"step": 3, "input": "right", "expected": {"x": 4, "y": 1, "power": 9, "relays": ["2,1"], "phase": "active"}, "observed": {"x": 4, "y": 1, "power": 9, "relays": ["2,1"], "phase": "active"}, "different": []}, {"step": 4, "input": "right", "expected": {"x": 4, "y": 1, "power": 9, "relays": ["2,1"], "phase": "active"}, "observed": {"x": 4, "y": 1, "power": 9, "relays": ["2,1"], "phase": "active"}, "different": []}], "ratios": {"movement": 1.0, "resources": 1.0}, "first_difference": null}</script><script>
+const data=JSON.parse(document.querySelector("#data").textContent);
+const range=document.querySelector("#step"), play=document.querySelector("#play");
+const board=["#######","#S*..E#","#.#.#.#","#....*#","#######"];
+range.max=data.checkpoints.length-1;
+document.querySelector("#route").textContent=data.route;
+let timer;
+function draw(){
+ const frame=data.checkpoints[Number(range.value)];
+ document.querySelector("#position").textContent=frame.step+" / "+range.max+" · "+frame.input;
+ for(const side of ["expected","observed"]){
+  const mount=document.querySelector("#"+side),s=frame[side];mount.replaceChildren();
+  if(!s.phase){mount.textContent="No observed state";continue;}
+  const grid=document.createElement("div");grid.className="map";
+  board.forEach((row,y)=>[...row].forEach((ch,x)=>{
+   const cell=document.createElement("span");const rover=s.x===x&&s.y===y;
+   cell.className="tile "+(rover?"rover":ch==="#"?"wall":"");
+   cell.textContent=rover?"■":ch==="E"?"E":ch==="*"&&!s.relays.includes(x+","+y)?"◆":"";
+   grid.append(cell);
+  }));
+  const stat=document.createElement("p");stat.textContent="Power "+s.power+" · Relays "+s.relays.length+"/2 · "+s.phase;
+  mount.append(grid,stat);
+ }
+ document.querySelector("#difference").textContent=frame.different.length?"Different fields: "+frame.different.join(", "):"States match.";
+}
+function stop(){clearInterval(timer);timer=undefined;play.textContent="Play";}
+range.oninput=()=>{stop();draw();};
+play.onclick=()=>{if(timer){stop();return;}if(range.value===range.max)range.value=0;draw();play.textContent="Pause";
+ timer=setInterval(()=>{range.value=Number(range.value)+1;draw();if(range.value===range.max)stop();},550);};
+draw();
+</script></html>

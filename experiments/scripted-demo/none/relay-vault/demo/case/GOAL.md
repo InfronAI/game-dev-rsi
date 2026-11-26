@@ -1,0 +1,2 @@
+# Relay Vault
+Recreate the reference browser puzzle and match its state after each input. Start at (1,1) with 12 power. Each successful move costs one unit. Walls and the locked exit cost zero. Stepping on either relay collects it once. Both relays unlock the exit. Reaching the exit wins even on the last unit of power. Otherwise zero power ends the run. A terminal state ignores movement; reset always starts a new run.

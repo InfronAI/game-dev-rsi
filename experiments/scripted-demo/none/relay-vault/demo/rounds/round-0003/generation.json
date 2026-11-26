@@ -1,0 +1,18 @@
+{
+  "summary": "Preserve power on a rejected move.",
+  "changes": [
+    "Preserve power on a rejected move."
+  ],
+  "request_id": "6b28ccb005386dcb7751b27ca0b86604411bf00e29adf03b86a6b1e60f6ff156",
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  "artifact_files": {
+    "index.html": "ba918cbda62b5fa5876593403023e97545257dba8c2747c1cfc075801f8c1dec",
+    "logic.mjs": "e90bcbde3ce655bd1700f18f914b630944e9ba2c121a680db147858333d66768"
+  },
+  "artifact_hash": "2f891e9065518baa7c2f8d0f7c0ae5b44e604189a5b538b3f84c427a38a809ef",
+  "accepted_at": "2026-11-26T02:42:40.162497+00:00"
+}

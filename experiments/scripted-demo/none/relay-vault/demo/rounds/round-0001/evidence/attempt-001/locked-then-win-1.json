@@ -1,0 +1,321 @@
+{
+  "route": "locked-then-win",
+  "error": null,
+  "checkpoints": [
+    {
+      "step": 0,
+      "input": "start",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 1,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 11,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 11,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 2,
+      "input": "right",
+      "expected": {
+        "x": 3,
+        "y": 1,
+        "power": 10,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 3,
+        "y": 1,
+        "power": 10,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 3,
+      "input": "right",
+      "expected": {
+        "x": 4,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 4,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 4,
+      "input": "right",
+      "expected": {
+        "x": 4,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "x",
+        "phase",
+        "power"
+      ]
+    },
+    {
+      "step": 5,
+      "input": "left",
+      "expected": {
+        "x": 3,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "x",
+        "phase"
+      ]
+    },
+    {
+      "step": 6,
+      "input": "down",
+      "expected": {
+        "x": 3,
+        "y": 2,
+        "power": 7,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "x",
+        "y",
+        "phase",
+        "power"
+      ]
+    },
+    {
+      "step": 7,
+      "input": "down",
+      "expected": {
+        "x": 3,
+        "y": 3,
+        "power": 6,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "x",
+        "y",
+        "phase",
+        "power"
+      ]
+    },
+    {
+      "step": 8,
+      "input": "right",
+      "expected": {
+        "x": 4,
+        "y": 3,
+        "power": 5,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "x",
+        "y",
+        "phase",
+        "power"
+      ]
+    },
+    {
+      "step": 9,
+      "input": "right",
+      "expected": {
+        "x": 5,
+        "y": 3,
+        "power": 4,
+        "relays": [
+          "2,1",
+          "5,3"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "y",
+        "phase",
+        "power",
+        "relays"
+      ]
+    },
+    {
+      "step": 10,
+      "input": "up",
+      "expected": {
+        "x": 5,
+        "y": 2,
+        "power": 3,
+        "relays": [
+          "2,1",
+          "5,3"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "y",
+        "phase",
+        "power",
+        "relays"
+      ]
+    },
+    {
+      "step": 11,
+      "input": "up",
+      "expected": {
+        "x": 5,
+        "y": 1,
+        "power": 2,
+        "relays": [
+          "2,1",
+          "5,3"
+        ],
+        "phase": "won"
+      },
+      "observed": {
+        "x": 5,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "won"
+      },
+      "different": [
+        "power",
+        "relays"
+      ]
+    }
+  ],
+  "ratios": {
+    "movement": 0.4166666666666667,
+    "resources": 0.4166666666666667
+  },
+  "first_difference": 4
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Require both relays before accepting a move into the exit.",
+  "changes": [
+    "Require both relays before accepting a move into the exit."
+  ],
+  "request_id": "df0d954f75fe48883525093f1e48c7371592febea14517fbcacfef30a4d84cb2",
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  "artifact_files": {
+    "index.html": "ba918cbda62b5fa5876593403023e97545257dba8c2747c1cfc075801f8c1dec",
+    "logic.mjs": "288705af0348961daf78b354ef5c8715dbd69f8723933014fa2a44172801996e"
+  },
+  "artifact_hash": "177a07297efbb2aeca8cfff99971ae35415aaa492b6d677a4e7aa2eec6656b40",
+  "accepted_at": "2026-11-26T02:42:38.375021+00:00"
+}

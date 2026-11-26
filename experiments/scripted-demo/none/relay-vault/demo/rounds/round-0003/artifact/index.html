@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relay Vault</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101c2d;color:#edf4ff;font:17px/1.55 system-ui,sans-serif;min-height:100vh;display:grid;place-items:center}main{width:min(92vw,660px);padding:30px 0}h1{font:600 clamp(30px,7vw,50px)/1.1 Georgia,serif;margin:0}p{color:#bed0e3}.status{display:flex;gap:1.3em;flex-wrap:wrap;margin:14px 0;color:#90e7d7}#board{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;background:#192b40;padding:8px;border-radius:12px}.cell{aspect-ratio:1;display:grid;place-items:center;border-radius:5px;background:#344b63;font-size:clamp(17px,4vw,32px)}.wall{background:repeating-linear-gradient(135deg,#213044 0 8px,#26354a 8px 10px)}.exit{color:#f3be76}.relay{color:#95f3d7}.player{background:#9bf7dd;color:#142737}nav{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}button{background:#21354e;color:white;border:1px solid #62788e;border-radius:7px;min-height:44px;padding:8px 13px;font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #9bf7dd}button:last-child{margin-left:auto}
+</style>
+<main><h1>Relay Vault</h1><p>Collect both diamonds and reach the exit before your power runs out.</p>
+<div class="status" role="status"><span id="power"></span><span id="relays"></span><strong id="phase"></strong></div>
+<div id="board" role="img" aria-label="Vault map"></div><nav aria-label="Game controls">
+<button data-action="left">Left</button><button data-action="up">Up</button><button data-action="down">Down</button><button data-action="right">Right</button><button data-action="reset">Reset</button></nav>
+<p>Arrow keys or WASD to move. R to reset. The square is your rover, the diamonds are relays, and E is the exit.</p></main>
+<script type="module">
+import {map, start, step} from "./logic.mjs";
+let state = start();
+const keys = {ArrowUp:"up",ArrowDown:"down",ArrowLeft:"left",ArrowRight:"right",w:"up",s:"down",a:"left",d:"right",r:"reset"};
+function render() {
+ const board = document.querySelector("#board");
+ board.replaceChildren();
+ map.forEach((row,y) => [...row].forEach((tile,x) => {
+   const cell = document.createElement("div");
+   const occupied = x === state.x && y === state.y;
+   const relay = tile === "*" && !state.relays.includes(x+","+y);
+   const type = occupied ? "player" : relay ? "relay" : tile === "E" ? "exit" : tile === "#" ? "wall" : "floor";
+   cell.className = "cell "+type;
+   cell.textContent = {player:"■",relay:"◆",exit:"E"}[type] || "";
+   board.append(cell);
+ }));
+ board.setAttribute("aria-label", "Rover at column "+state.x+", row "+state.y);
+ document.querySelector("#power").textContent = "Power "+state.power;
+ document.querySelector("#relays").textContent = "Relays "+state.relays.length+"/2";
+ document.querySelector("#phase").textContent = {active:"Exploring",won:"Vault cleared",drained:"Power depleted"}[state.phase];
+}
+function move(action) { state = step(state,action); render(); }
+document.querySelectorAll("button").forEach(button => button.onclick = () => move(button.dataset.action));
+document.addEventListener("keydown", event => { const action=keys[event.key]; if(action){event.preventDefault();move(action);} });
+render();
+</script></html>

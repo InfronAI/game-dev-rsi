@@ -1,0 +1,25 @@
+{
+  "hypothesis": "Preserve power on a rejected move.",
+  "strategy": "wall-cost",
+  "stop_the_line": true,
+  "expected_gain_points": 0,
+  "actions": [
+    {
+      "addresses": [
+        "locked-exit",
+        "wall-bump",
+        "locked-then-win"
+      ],
+      "change": "Preserve power on a rejected move.",
+      "expected_effect": "Keep accepted routes stable and remove the observed discrepancy.",
+      "validation": "Replay both public suites and compare each state."
+    }
+  ],
+  "request_id": "385f2b7bd96ed256c9201c96879192ed34b875aed4f638ce3b44f6f107e471b8",
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  "accepted_at": "2026-11-26T02:42:40.011215+00:00"
+}

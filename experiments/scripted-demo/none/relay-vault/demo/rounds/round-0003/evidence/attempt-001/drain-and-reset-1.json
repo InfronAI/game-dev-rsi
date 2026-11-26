@@ -1,0 +1,348 @@
+{
+  "route": "drain-and-reset",
+  "error": null,
+  "checkpoints": [
+    {
+      "step": 0,
+      "input": "start",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 1,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 11,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 11,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 2,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 10,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 10,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 3,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 9,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 4,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 8,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 5,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 7,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 7,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 6,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 6,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 6,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 7,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 5,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 5,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 8,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 4,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 4,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 9,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 3,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 3,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 10,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 2,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 2,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 11,
+      "input": "right",
+      "expected": {
+        "x": 2,
+        "y": 1,
+        "power": 1,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 2,
+        "y": 1,
+        "power": 1,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "active"
+      },
+      "different": []
+    },
+    {
+      "step": 12,
+      "input": "left",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 0,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "drained"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 0,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "drained"
+      },
+      "different": []
+    },
+    {
+      "step": 13,
+      "input": "right",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 0,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "drained"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 0,
+        "relays": [
+          "2,1"
+        ],
+        "phase": "drained"
+      },
+      "different": []
+    },
+    {
+      "step": 14,
+      "input": "reset",
+      "expected": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "observed": {
+        "x": 1,
+        "y": 1,
+        "power": 12,
+        "relays": [],
+        "phase": "active"
+      },
+      "different": []
+    }
+  ],
+  "ratios": {
+    "movement": 1.0,
+    "resources": 1.0
+  },
+  "first_difference": null
+}
