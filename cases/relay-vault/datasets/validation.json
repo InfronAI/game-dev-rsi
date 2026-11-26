@@ -1,0 +1,40 @@
+{
+  "split": "validation",
+  "repeats": 1,
+  "samples": [
+    {
+      "id": "locked-exit",
+      "payload": {
+        "actions": [
+          "right",
+          "right",
+          "right",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "wall-bump",
+      "payload": {
+        "actions": [
+          "up",
+          "up",
+          "left",
+          "left",
+          "right"
+        ]
+      }
+    },
+    {
+      "id": "collector",
+      "payload": {
+        "actions": [
+          "right",
+          "left",
+          "right",
+          "right"
+        ]
+      }
+    }
+  ]
+}

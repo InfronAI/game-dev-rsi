@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "relay-vault",
+  "title": "Relay Vault",
+  "objective": "GOAL.md",
+  "prompt": "PROMPT.md",
+  "rubric": "rubric.json",
+  "environment": "environment.json",
+  "assets": "assets",
+  "artifact": {
+    "required_files": [
+      "index.html",
+      "logic.mjs"
+    ],
+    "entrypoint": "index.html",
+    "max_bytes": 2097152,
+    "allow_extra_files": true
+  },
+  "datasets": {
+    "validation": "datasets/validation.json",
+    "test": "datasets/test.json"
+  },
+  "metrics": [
+    {
+      "id": "movement",
+      "unit": "fraction",
+      "direction": "higher",
+      "minimum": 0,
+      "maximum": 1,
+      "target": 1,
+      "description": "Coordinates and game phase",
+      "required_for_completed": true
+    },
+    {
+      "id": "resources",
+      "unit": "fraction",
+      "direction": "higher",
+      "minimum": 0,
+      "maximum": 1,
+      "target": 1,
+      "description": "Power and collected relays",
+      "required_for_completed": true
+    }
+  ],
+  "simulation": {
+    "instructions": "simulation/README.md",
+    "argv": [
+      "{python}",
+      "{case_dir}/simulation/collect.py",
+      "{request}",
+      "{response}"
+    ],
+    "entrypoint": "simulation/collect.py",
+    "timeout_seconds": 120
+  },
+  "convergence": {
+    "epsilon_points": 0.25,
+    "patience": 2,
+    "min_rounds": 3,
+    "min_samples": 2,
+    "min_strategies": 2
+  }
+}

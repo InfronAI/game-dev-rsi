@@ -1,0 +1,41 @@
+{
+  "scale": [
+    0,
+    100
+  ],
+  "evidence_policy": {
+    "score_cap_without_observation": 0,
+    "observation_kinds": [
+      "runtime"
+    ]
+  },
+  "gates": {
+    "transition_parity": "Every checkpoint matches the reference on all five state fields."
+  },
+  "dimensions": [
+    {
+      "id": "movement",
+      "weight": 0.55,
+      "description": "Coordinates and game phase. Score the percentage of matching checkpoints on this route.",
+      "metrics": [
+        "movement"
+      ],
+      "anchors": {
+        "0": "No checkpoints match, or evidence is missing.",
+        "100": "All checkpoints match."
+      }
+    },
+    {
+      "id": "resources",
+      "weight": 0.45,
+      "description": "Power and collected relays. Score the percentage of matching checkpoints on this route.",
+      "metrics": [
+        "resources"
+      ],
+      "anchors": {
+        "0": "No checkpoints match, or evidence is missing.",
+        "100": "All checkpoints match."
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Browser smoke test</title>
+<output id="receipt">pending</output><iframe title="Test target" id="game"></iframe>
+<script>
+const frame=document.querySelector("iframe"), query=new URLSearchParams(location.search);
+const url=new URL(query.get("target"),location.href);
+if(url.origin!==location.origin)throw Error("Local same-origin target required");
+frame.onload=()=>{
+ const doc=frame.contentDocument, w=frame.contentWindow;
+ const check=(ok,label)=>{if(!ok)throw Error(label);};
+ try{
+  if(query.get("mode")==="replay"){
+   const range=doc.querySelector("#step");
+   check(Number(range.max)>0,"Replay has no checkpoints");
+   range.value=range.max;range.dispatchEvent(new w.Event("input"));
+   check(doc.querySelector("#position").textContent.startsWith(range.max+" /"),"Scrubber did not advance");
+   check(doc.querySelector("#observed .map") && doc.querySelector("#expected .map"),"Missing boards");
+  }else{
+   check(doc.querySelectorAll("#board .cell").length===35,"Wrong board size");
+   for(const key of ["d","d","s","s","d","d","w","w"]){
+    doc.dispatchEvent(new w.KeyboardEvent("keydown",{key,bubbles:true}));
+   }
+   check(doc.querySelector("#phase").textContent==="Vault cleared","Keyboard route did not win");
+   doc.querySelector('[data-action="reset"]').click();
+   check(doc.querySelector("#power").textContent==="Power 12","Reset did not restore power");
+   doc.querySelector('[data-action="right"]').click();
+   check(doc.querySelector("#relays").textContent==="Relays 1/2","Button input did not collect a relay");
+  }
+  document.querySelector("output").textContent="passed";
+ }catch(err){document.querySelector("output").textContent=String(err);}
+};
+frame.src=url.href;
+</script></html>

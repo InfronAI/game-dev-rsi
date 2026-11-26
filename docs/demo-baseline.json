@@ -1,0 +1,24 @@
+{
+  "identity": "scripted-demo / none",
+  "case_hash": "7233c3fadec5b07db2204a7d785b01c12036edd23f0956ecbf4b7137905000fb",
+  "rounds": [
+    {
+      "round": 1,
+      "artifact_hash": "6d6b0d8c79ad516b70ca02b481f7d9133fd40471472ab0aaadde59d12b1ecd7c",
+      "score": 83.452381,
+      "gates_pass": false
+    },
+    {
+      "round": 2,
+      "artifact_hash": "177a07297efbb2aeca8cfff99971ae35415aaa492b6d677a4e7aa2eec6656b40",
+      "score": 89.071429,
+      "gates_pass": false
+    },
+    {
+      "round": 3,
+      "artifact_hash": "2f891e9065518baa7c2f8d0f7c0ae5b44e604189a5b538b3f84c427a38a809ef",
+      "score": 100.0,
+      "gates_pass": true
+    }
+  ]
+}
